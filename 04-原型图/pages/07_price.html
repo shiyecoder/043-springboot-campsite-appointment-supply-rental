@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>价格与停用 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1F2937">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">营地资源</div>
+<a class="" href="06_site_admin.html">营区与营位</a>
+<a class="on" href="07_price.html">价格与停用</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">物资租赁</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="" href="15_combo.html">营位物资联合可用性</a>
+<div class="group">安全运营</div>
+<a class="" href="16_patrol.html">巡检任务</a>
+<a class="" href="17_event.html">隐患与事件<span class="badge">1</span></a>
+<div class="group">客户服务</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<div class="group">配置</div>
+<a class="" href="19_rule.html">规则配置</a>
+<a class="" href="20_system.html">用户与角色</a>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>营地资源</b> / 价格与停用</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">顾</div>
+    <div style="font-size:13px">运营经理</div>
+  </header>
+  <main class="content"><h1>价格与停用管理</h1>
+<div class="sub">特殊日期价格、包场占用与维修停用，全部按营位或营区维度生效</div>
+<div class="card">
+  <div class="toolbar">
+    <select><option>类型：全部</option><option>特殊日期价格</option><option>包场占用</option><option>维修停用</option></select>
+    <select><option>营区：全部</option></select>
+    <input type="date" value="2026-11-01" style="width:160px">
+    <button class="btn primary">查询</button>
+    <div style="flex:1"></div>
+    <button class="btn primary">+ 新增规则</button>
+  </div>
+  <table><thead><tr><th>生效日期</th><th>结束日期</th><th>名称</th><th>适用范围</th><th>价格 / 处理</th><th>状态</th><th>操作人</th><th>创建时间</th><th>操作</th></tr></thead><tbody><tr><td>2026-11-07</td><td>2026-11-09</td><td>周末上浮</td><td>A 区 / B 区</td><td>×1.20</td><td>生效</td><td>顾青</td><td>2026-10-20 10:12</td></tr><tr><td>2026-11-21</td><td>2026-11-23</td><td>感恩节假期</td><td>全部营区</td><td>×1.50</td><td>生效</td><td>顾青</td><td>2026-10-22 14:36</td></tr><tr><td>2026-12-24</td><td>2026-12-26</td><td>圣诞专场</td><td>A 区 / D 区</td><td>×1.40</td><td>待生效</td><td>顾青</td><td>2026-10-30 09:05</td></tr><tr><td>2026-11-14</td><td>2026-11-14</td><td>企业团建包场</td><td>C 区整体</td><td>包场价 ￥6,800</td><td>生效</td><td>顾青</td><td>2026-10-25 16:40</td></tr><tr><td>2026-11-03</td><td>2026-11-05</td><td>B-03 维修停用</td><td>B-03</td><td>—</td><td>生效</td><td>唐磊</td><td>2026-10-28 15:40</td></tr></tbody></table><div class="pager"><span>共 12 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+</div>
+<div class="row" style="margin-top:16px">
+  <div class="card" style="flex:1"><h2>月度价格日历</h2>
+    <div class="hint" style="margin-bottom:10px">点击日期可查看当日各营区实际售价</div>
+    <div class="cal"><div class="hd">一</div><div class="hd">二</div><div class="hd">三</div><div class="hd">四</div><div class="hd">五</div><div class="hd">六</div><div class="hd">日</div><div class="cd"><b>1</b><div class="ev ok">￥280</div></div><div class="cd"><b>2</b><div class="ev ok">￥280</div></div><div class="cd"><b>3</b><div class="ev ok">￥280</div></div><div class="cd"><b>4</b><div class="ev ok">￥280</div></div><div class="cd"><b>5</b><div class="ev ok">￥280</div></div><div class="cd"><b>6</b><div class="ev ok">￥280</div></div><div class="cd"><b>7</b><div class="ev warn">￥420</div></div><div class="cd"><b>8</b><div class="ev warn">￥420</div></div><div class="cd"><b>9</b><div class="ev ok">￥280</div></div><div class="cd"><b>10</b><div class="ev ok">￥280</div></div><div class="cd"><b>11</b><div class="ev ok">￥280</div></div><div class="cd"><b>12</b><div class="ev ok">￥280</div></div><div class="cd"><b>13</b><div class="ev ok">￥280</div></div><div class="cd"><b>14</b><div class="ev ok">￥280</div></div><div class="cd"><b>15</b><div class="ev ok">￥280</div></div><div class="cd"><b>16</b><div class="ev ok">￥280</div></div><div class="cd"><b>17</b><div class="ev ok">￥280</div></div><div class="cd"><b>18</b><div class="ev ok">￥280</div></div><div class="cd"><b>19</b><div class="ev ok">￥280</div></div><div class="cd"><b>20</b><div class="ev ok">￥280</div></div><div class="cd"><b>21</b><div class="ev warn">￥420</div></div><div class="cd"><b>22</b><div class="ev warn">￥420</div></div><div class="cd"><b>23</b><div class="ev ok">￥280</div></div><div class="cd"><b>24</b><div class="ev ok">￥280</div></div><div class="cd"><b>25</b><div class="ev ok">￥280</div></div><div class="cd"><b>26</b><div class="ev ok">￥280</div></div><div class="cd"><b>27</b><div class="ev ok">￥280</div></div><div class="cd"><b>28</b><div class="ev ok">￥280</div></div><div class="cd"><b>29</b><div class="ev ok">￥280</div></div><div class="cd"><b>30</b><div class="ev ok">￥280</div></div></div>
+  </div>
+  <div class="card" style="width:360px"><h2>新增特殊价格</h2>
+    <label class="f"><span>生效日期</span><input type="date" value="2026-11-07"></label>
+    <label class="f"><span>结束日期</span><input type="date" value="2026-11-09"></label>
+    <label class="f"><span>适用范围</span><select style="width:260px"><option>A 区 / B 区</option></select></label>
+    <label class="f"><span>计价方式</span><select style="width:260px"><option>按倍率上浮</option><option>固定价</option></select></label>
+    <label class="f"><span>倍率</span><input value="1.20" style="width:120px"></label>
+    <label class="f" style="align-items:flex-start"><span>备注</span><textarea rows="2" style="width:260px">周末上浮 20&#37;</textarea></label>
+    <div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn">取消</button><button class="btn primary">保存</button></div>
+  </div>
+</div></main>
+</div></div></body></html>

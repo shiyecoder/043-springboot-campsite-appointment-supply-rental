@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>退营结算 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#24455C">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="on" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">客户</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<a class="" href="17_event.html">事件登记</a>
+<div class="group">配置</div>
+<a class="" href="21_message.html">消息中心<span class="badge">2</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>预约业务</b> / 退营结算 / <b>YY20261030-0028</b></div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">前台人员</div>
+  </header>
+  <main class="content"><h1>退营验收与结算 · YY20261030-0028</h1>
+<div class="sub">营位 D-01 · 冯雪 · 2 人 · 10-30 至 11-01 · 需完成物资归还与营位验收后方可结算</div>
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <h2>退营验收</h2>
+      <div class="row" style="gap:24px">
+        <div style="flex:1">
+          <label class="f"><span>营位卫生</span><select style="width:100%"><option>合格（无需清洁费）</option><option>需深度清洁 +￥80</option></select></label>
+          <label class="f"><span>物资数量</span><select style="width:100%"><option>齐全</option><option>缺失</option></select></label>
+          <label class="f"><span>损坏情况</span><select style="width:100%"><option>轻微破损（赔偿 ￥60）</option><option>无损坏</option><option>严重损坏</option></select></label>
+        </div>
+        <div style="flex:1">
+          <label class="f"><span>实际退营时间</span><input value="2026-11-01 14:40:00" style="width:100%"></label>
+          <label class="f"><span>超时时长</span><input value="2.7 小时（应退 12:00）" style="width:100%" disabled></label>
+          <label class="f"><span>超时费</span><input value="135.00" style="width:100%" disabled></label>
+        </div>
+      </div>
+      <div class="row" style="gap:12px;margin-top:4px">
+        <div><img class="thumb" style="width:150px;height:104px" src="../img/checkout-1.jpg" alt="营位现状"><div class="hint" style="margin-top:4px">营位地面</div></div>
+        <div><img class="thumb" style="width:150px;height:104px" src="../img/checkout-2.jpg" alt="损坏凭证"><div class="hint" style="margin-top:4px">帐篷支杆变形</div></div>
+        <div><img class="thumb" style="width:150px;height:104px" src="../img/checkout-3.jpg" alt="归还物资"><div class="hint" style="margin-top:4px">归还清点</div></div>
+        <div style="width:150px;height:104px;border:1px dashed var(--line);border-radius:6px;display:grid;place-items:center;color:var(--text-sub);font-size:12px">+ 上传凭证</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>物资归还明细</h2>
+      <table><thead><tr><th>物资</th><th>应收</th><th>实收</th><th>归还状态</th><th>损坏</th><th>赔偿</th><th>后续处理</th></tr></thead><tbody><tr><td>四人帐篷</td><td>1</td><td>1</td><td><span class="tag t-green">已归还</span></td><td><span class="tag t-amber">支杆变形</span></td><td>￥60</td><td>转维修</td></tr><tr><td>折叠桌椅组</td><td>1</td><td>1</td><td><span class="tag t-green">已归还</span></td><td><span class="tag t-green">完好</span></td><td>￥0</td><td>入库</td></tr><tr><td>营地灯</td><td>2</td><td>2</td><td><span class="tag t-green">已归还</span></td><td><span class="tag t-green">完好</span></td><td>￥0</td><td>入库</td></tr></tbody></table>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>费用汇总</h2>
+      <table><thead><tr><th>费用项</th><th>计算说明</th><th>金额</th></tr></thead><tbody><tr><td>营位费</td><td>D-01 ￥220 × 2 晚（工作日）</td><td>￥440</td></tr><tr><td>物资租金</td><td>帐篷 ￥60×2 + 桌椅 ￥40×2 + 营地灯 ￥10×2×2</td><td>￥240</td></tr><tr><td>超时费</td><td>超时 2.7 小时 × ￥50/小时</td><td>￥135</td></tr><tr><td>损坏赔偿</td><td>帐篷支杆变形，采购价 ￥100 × 60%</td><td>￥60</td></tr><tr><td>清洁费</td><td>卫生合格，免收</td><td>￥0</td></tr><tr><td>优惠</td><td>会员 9 折券</td><td>-￥30</td></tr><tr><td>押金退还</td><td>押金 ￥300 − 赔偿 ￥60</td><td>￥240</td></tr></tbody></table>
+      <div class="note" style="margin-top:10px">费用明细由后端根据营位费、物资租金、超时费、损坏赔偿、押金退还与优惠自动汇总，人工调整需填写原因并留痕。</div>
+    </div>
+  </div>
+
+  <div style="width:360px;flex:0 0 360px">
+    <div class="card"><h2>结算单</h2>
+      <div style="font-size:13px;line-height:24px">
+        <div style="display:flex;justify-content:space-between"><span class="hint">应收合计</span><b>￥1,205</b></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">押金</span><span>￥300</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">押金退还</span><span style="color:var(--success)">-￥240</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">押金抵扣</span><span style="color:var(--danger)">-￥60</span></div>
+        <div style="border-top:1px solid var(--line);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between">
+          <span class="hint">客人应付</span><b style="font-size:17px;color:var(--primary)">￥965</b></div>
+      </div>
+      <label class="f" style="margin-top:12px;align-items:flex-start"><span>收款方式</span>
+        <select style="width:220px"><option>微信</option><option>现金</option><option>支付宝</option></select></label>
+      <label class="f" style="align-items:flex-start"><span>人工调整原因</span><textarea rows="2" style="width:220px">帐篷支杆变形，按采购价六折赔偿</textarea></label>
+      <div class="hint">仅登记线下收款结果，不接入支付接口。</div>
+      <button class="btn primary" style="width:100%;margin-top:12px">确认收款并结算</button>
+      <button class="btn" style="width:100%;margin-top:8px">暂存结算单</button>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>操作留痕</h2>
+      <ul class="timeline" style="margin-top:10px">
+        <li><b>提交退营验收</b><div class="m">林悦 · 2026-11-01 14:41</div><div class="hint">物资 3 项归还齐全，帐篷支杆变形</div></li>
+        <li><b>仓库确认归还</b><div class="m">唐磊 · 2026-11-01 14:52</div><div class="hint">帐篷转维修，其余入库</div></li>
+        <li><b>生成费用明细</b><div class="m">系统 · 2026-11-01 14:52</div><div class="hint">规则：超时 50 元/小时，损坏按六折</div></li>
+      </ul>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>

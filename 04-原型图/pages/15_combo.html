@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>联合可用性 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1F2937">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">营地资源</div>
+<a class="" href="06_site_admin.html">营区与营位</a>
+<a class="" href="07_price.html">价格与停用</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">物资租赁</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="on" href="15_combo.html">营位物资联合可用性</a>
+<div class="group">安全运营</div>
+<a class="" href="16_patrol.html">巡检任务</a>
+<a class="" href="17_event.html">隐患与事件<span class="badge">1</span></a>
+<div class="group">客户服务</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<div class="group">配置</div>
+<a class="" href="19_rule.html">规则配置</a>
+<a class="" href="20_system.html">用户与角色</a>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>物资租赁</b> / 营位物资联合可用性</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">顾</div>
+    <div style="font-size:13px">运营经理</div>
+  </header>
+  <main class="content"><h1>营位与租赁物资联合可用性</h1>
+<div class="sub">在推荐营位时同步检查物资库存与周转缓冲，避免「营位可订、装备不足」；结果含缺口与替代组合</div>
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <h2>计算输入</h2>
+      <div class="row" style="gap:24px">
+        <div style="flex:1">
+          <label class="f"><span>营位</span><select style="width:100%"><option>A-07 草坪帐篷位</option><option>B-06 木平台位</option></select></label>
+          <label class="f"><span>入住日期</span><input type="date" value="2026-11-07" style="width:100%"></label>
+          <label class="f"><span>退营日期</span><input type="date" value="2026-11-09" style="width:100%"></label>
+        </div>
+        <div style="flex:1">
+          <label class="f"><span>人数</span><input value="3" style="width:100%"></label>
+          <label class="f"><span>设施需求</span><select style="width:100%"><option>接电 + 野餐桌</option></select></label>
+          <label class="f"><span>物资组合</span><select style="width:100%"><option>四人帐篷 + 桌椅 + 炉具</option></select></label>
+        </div>
+      </div>
+      <div class="toolbar" style="margin-bottom:0"><button class="btn primary">重新计算</button>
+        <button class="btn">保存为草稿</button><div style="flex:1"></div>
+        <span class="hint">规则版本 v3（生效 2026-10-15）· 权重合计 100&#37;</span></div>
+    </div>
+
+    <div class="row" style="margin-top:14px;gap:14px">
+      <div class="card" style="flex:1.35">
+        <h2>计算结果与各项得分</h2>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-size:34px;font-weight:600;color:var(--primary);font-variant-numeric:tabular-nums">86.5</div>
+          <div><span class="tag t-green" style="font-size:13px;padding:3px 10px">推荐</span>
+            <div class="hint" style="margin-top:4px">总分 ≥ 80 判为推荐，60–79 为有条件推荐，&lt; 60 为不推荐</div></div>
+        </div>
+        <div class="score-row"><span>营位时段 <span class="hint">(20%)</span></span><div class="bar"><i style="width:95%"></i></div><span class="v">95</span></div><div class="score-row"><span>容纳人数 <span class="hint">(15%)</span></span><div class="bar"><i style="width:88%"></i></div><span class="v">88</span></div><div class="score-row"><span>设施需求 <span class="hint">(15%)</span></span><div class="bar"><i style="width:80%"></i></div><span class="v">80</span></div><div class="score-row"><span>物资库存 <span class="hint">(25%)</span></span><div class="bar"><i style="width:92%"></i></div><span class="v">92</span></div><div class="score-row"><span>物资周转时间 <span class="hint">(15%)</span></span><div class="bar"><i style="width:70%"></i></div><span class="v">70</span></div><div class="score-row"><span>维护状态 <span class="hint">(10%)</span></span><div class="bar"><i style="width:100%"></i></div><span class="v">100</span></div>
+      </div>
+      <div class="card" style="width:320px">
+        <h2>主要影响因素</h2>
+        <div style="font-size:13px;line-height:22px">
+          <div style="margin-bottom:8px"><b style="color:var(--success)">正向：</b>营位时段完全空闲（11-07 至 11-09 无冲突），维护状态正常。</div>
+          <div style="margin-bottom:8px"><b style="color:var(--danger)">扣分：</b>物资周转时间偏紧，11-07 当日帐篷归还集中在 12:00，备货窗口仅 2 小时。</div>
+          <div><b style="color:var(--warning)">提示：</b>3 人入住 4 人帐，容纳人数得分 88，仍有余量。</div>
+        </div>
+        <h2 style="margin-top:14px">未满足条件</h2>
+        <div class="hint" style="line-height:22px">无硬性不满足项。建议增配 1 顶天幕以应对降雨预警。</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>物资可用性明细与替代组合</h2>
+      <table><thead><tr><th>物资</th><th>需求</th><th>库存可用</th><th>周转缓冲</th><th>结论</th><th>替代组合</th></tr></thead><tbody><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-1.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">四人帐篷</div></td><td>1</td><td>6</td><td>扣除 2 顶缓冲后 4 顶</td><td><span class="tag t-green">满足</span></td><td>六人隧道帐（+￥60/晚）</td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-3.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">折叠桌椅组</div></td><td>1</td><td>12</td><td>—</td><td><span class="tag t-green">满足</span></td><td>蛋卷桌 + 折叠椅 ×4</td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-5.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">卡式炉具</div></td><td>1</td><td>2</td><td>11-07 归还 8 台</td><td><span class="tag t-amber">勉强满足</span></td><td>电磁炉（需接电）</td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-7.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">睡袋（单人）</div></td><td>3</td><td>0</td><td>11-08 归还 6 条</td><td><span class="tag t-red">当前不足</span></td><td>毛毯 ×3（免费）</td></tr></tbody></table>
+      <div class="note" style="margin-top:10px">缺口项按同分类、同容量优先给出替代：若卡式炉具不足，可改用电磁炉（需接电营位）或共享厨房炊具。</div>
+    </div>
+  </div>
+
+  <div style="width:340px;flex:0 0 340px">
+    <div class="card"><h2>人工调整</h2>
+      <div class="hint" style="line-height:22px;margin-bottom:10px">业务负责人可调整最终结论，但原始计算结果不覆盖，调整记录单独留痕。</div>
+      <label class="f" style="align-items:flex-start"><span>调整结果</span>
+        <select style="width:200px"><option>推荐</option><option>有条件推荐</option><option>不推荐</option></select></label>
+      <label class="f" style="align-items:flex-start"><span>原因</span>
+        <textarea rows="3" style="width:200px">客人自带帐篷，物资需求减少，周转风险可忽略</textarea></label>
+      <div class="hint">原因不少于 5 个字</div>
+      <button class="btn primary" style="width:100%;margin-top:10px">提交调整</button>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>计算留痕</h2>
+      <ul class="timeline" style="margin-top:10px">
+        <li><b>v3 计算 · 86.5 推荐</b><div class="m">系统 · 2026-11-01 14:05:22</div></li>
+        <li><b>v3 计算 · 78.0 有条件推荐</b><div class="m">系统 · 2026-11-01 11:20:08</div><div class="hint">物资库存快照不同（炉具仅剩 2）</div></li>
+        <li><b>v2 计算 · 81.0 推荐</b><div class="m">系统 · 2026-10-28 16:02:41</div><div class="hint">旧规则版本，仅供追溯</div></li>
+      </ul>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>效果统计</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="kpi" style="padding:10px"><div class="label">推荐采纳率</div><div class="value" style="font-size:20px">82.6&#37;</div></div>
+        <div class="kpi" style="padding:10px"><div class="label">人工调整率</div><div class="value" style="font-size:20px">11.9&#37;</div></div>
+      </div>
+      <div class="hint" style="margin-top:8px">近 30 天 42 次计算，5 次人工调整，调整后未出现物资短缺投诉。</div>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>

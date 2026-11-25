@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>巡检任务 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1F2937">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">营地资源</div>
+<a class="" href="06_site_admin.html">营区与营位</a>
+<a class="" href="07_price.html">价格与停用</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">物资租赁</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="" href="15_combo.html">营位物资联合可用性</a>
+<div class="group">安全运营</div>
+<a class="on" href="16_patrol.html">巡检任务</a>
+<a class="" href="17_event.html">隐患与事件<span class="badge">1</span></a>
+<div class="group">客户服务</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<div class="group">配置</div>
+<a class="" href="19_rule.html">规则配置</a>
+<a class="" href="20_system.html">用户与角色</a>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>安全运营</b> / 巡检任务</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">顾</div>
+    <div style="font-size:13px">运营经理</div>
+  </header>
+  <main class="content"><h1>巡检任务</h1>
+<div class="sub">按营区生成消防、用电、卫生、道路与公共设施巡检任务；发现问题转隐患登记</div>
+<div class="card">
+  <div class="toolbar">
+    <input type="date" value="2026-11-01" style="width:160px">
+    <select><option>营区：全部</option></select>
+    <select><option>巡检类型：全部</option><option>消防</option><option>用电</option><option>卫生</option></select>
+    <select><option>状态：全部</option></select>
+    <button class="btn primary">查询</button>
+    <div style="flex:1"></div>
+    <button class="btn">按营区批量生成</button><button class="btn primary">+ 新建任务</button>
+  </div>
+  <table><thead><tr><th>任务编号</th><th>营区</th><th>类型</th><th>巡检项</th><th>巡检人</th><th>计划时间</th><th>状态</th><th>结果</th><th>完成时间</th><th>操作</th></tr></thead><tbody><tr><td>XJ20261101-0012</td><td>A 区</td><td>消防</td><td>灭火器压力、疏散通道</td><td>顾青</td><td>2026-11-01 09:00</td><td><span class="tag t-green">已完成</span></td><td>正常</td><td>2026-11-01 09:24</td></tr><tr><td>XJ20261101-0013</td><td>B 区</td><td>用电</td><td>配电箱、线缆、接电桩</td><td>顾青</td><td>2026-11-01 10:00</td><td><span class="tag t-red">已发现隐患</span></td><td>2 处</td><td>2026-11-01 10:38</td></tr><tr><td>XJ20261101-0014</td><td>C 区</td><td>卫生</td><td>洗手间、垃圾清运</td><td>唐磊</td><td>2026-11-01 11:00</td><td><span class="tag t-blue">进行中</span></td><td>—</td><td>2026-11-01 11:12</td></tr><tr><td>XJ20261101-0015</td><td>D 区</td><td>道路</td><td>路面、照明、标识</td><td>顾青</td><td>2026-11-01 15:00</td><td><span class="tag t-amber">待执行</span></td><td>—</td><td>—</td></tr><tr><td>XJ20261101-0016</td><td>公共设施</td><td>公共设施</td><td>儿童沙池、共享厨房</td><td>唐磊</td><td>2026-11-01 16:00</td><td><span class="tag t-amber">待执行</span></td><td>—</td><td>—</td></tr><tr><td>XJ20261031-0009</td><td>A 区</td><td>消防</td><td>灭火器压力、疏散通道</td><td>顾青</td><td>2026-10-31 09:00</td><td><span class="tag t-green">已完成</span></td><td>正常</td><td>2026-10-31 09:18</td></tr></tbody></table><div class="pager"><span>共 36 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+</div>
+<div class="row" style="margin-top:16px">
+  <div class="card" style="flex:1"><h2>今日巡检覆盖</h2>
+    <div class="row" style="gap:14px">
+      <div class="kpi" style="flex:1"><div class="label">应巡检</div><div class="value" style="font-size:22px">5</div></div>
+      <div class="kpi" style="flex:1"><div class="label">已完成</div><div class="value" style="font-size:22px">2</div></div>
+      <div class="kpi" style="flex:1"><div class="label">发现隐患</div><div class="value" style="font-size:22px;color:var(--danger)">2</div></div>
+      <div class="kpi" style="flex:1"><div class="label">覆盖率</div><div class="value" style="font-size:22px">40&#37;</div></div>
+    </div>
+  </div>
+  <div class="card" style="width:400px"><h2>巡检项模板</h2>
+    <div class="hint" style="line-height:22px">消防：灭火器压力、疏散通道、明火管控<br>用电：配电箱、线缆破损、接电桩接地<br>
+      卫生：洗手间、垃圾清运、炊事区油污<br>道路：路面塌陷、照明失效、夜间标识<br>公共设施：儿童沙池、共享厨房、淋浴热水</div>
+  </div>
+</div></main>
+</div></div></body></html>

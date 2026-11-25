@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>移动端巡检 · 云栖露营地</title><link rel="stylesheet" href="../mock.css"><style>
+body{background:#E9EDF2;padding:28px 0}
+.phone .pbody{overflow:hidden}
+.mtabs{display:flex;gap:6px;margin-bottom:12px;font-size:12px}
+.mtabs span{padding:5px 10px;border-radius:14px;background:#fff;border:1px solid var(--line);color:var(--text-sub)}
+.mtabs span.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+.field2{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:10px}
+.field2 .lb{font-size:12px;color:var(--text-sub);margin-bottom:4px}
+.photos{display:flex;gap:8px;margin-top:8px}
+.photos img,.photos .add{width:64px;height:64px;border-radius:6px;object-fit:cover}
+.photos .add{border:1px dashed var(--line);display:grid;place-items:center;color:var(--text-sub);font-size:20px;background:#F8FAFB}
+</style></head><body>
+<div class="phone">
+  <div class="phead">巡检 · B 区</div>
+  <div class="pbody">
+    <div class="mtabs"><span class="on">待执行 3</span><span>进行中 1</span><span>已完成 2</span></div>
+    <div class="mcard">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div class="t">XJ20261101-0014 · 卫生</div><span class="tag t-blue">进行中</span></div>
+      <div class="m">C 区 · 洗手间、垃圾清运 · 计划 11:00</div>
+    </div>
+    <div class="mcard">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div class="t">XJ20261101-0015 · 道路</div><span class="tag t-amber">待执行</span></div>
+      <div class="m">D 区 · 路面、照明、标识 · 计划 15:00</div>
+    </div>
+    <div class="field2"><div class="lb">巡检结果</div>
+      <div style="display:flex;gap:8px"><span class="tag t-green">正常</span><span class="tag t-red">发现隐患</span><span class="tag t-gray">无法执行</span></div></div>
+    <div class="field2"><div class="lb">问题级别</div>
+      <div style="display:flex;gap:8px"><span class="tag t-red">高</span><span class="tag t-amber">中</span><span class="tag t-gray">低</span></div></div>
+    <div class="field2"><div class="lb">现场照片（已拍 2 张）</div>
+      <div class="photos"><img src="../img/patrol-1.jpg" alt="现场"><img src="../img/patrol-2.jpg" alt="现场"><div class="add">+</div></div></div>
+    <div class="field2"><div class="lb">问题描述</div>
+      <div style="font-size:13px;color:var(--text-sub);line-height:20px">D-03 至 D-04 之间路面有轻微塌陷，夜间照明不足。</div></div>
+  </div>
+  <div class="pfoot"><button class="btn" style="flex:1;height:40px">保存草稿</button><button class="btn primary" style="flex:2;height:40px">提交巡检结果</button></div>
+</div>
+</body></html>

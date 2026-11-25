@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>登录 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css"><style>
+.auth .art .route{display:flex;flex-direction:column;gap:10px;margin-top:28px;position:relative;z-index:2}
+.auth .art .route div{display:flex;align-items:center;gap:10px;font-size:13px;color:#CFDCE4}
+.auth .art .route b{width:20px;height:20px;border-radius:50%;border:1px solid #7FA2B6;display:grid;place-items:center;font-size:11px;font-weight:500;color:#DCE8EE}
+.pitch-art{position:absolute;left:0;right:0;bottom:0;height:190px;opacity:.5}
+.pitch-art span{position:absolute;border:1px solid rgba(255,255,255,.35);border-radius:4px}
+</style></head>
+<body><div class="auth">
+  <div class="art">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600">
+        <span style="width:26px;height:26px;border-radius:7px;background:#9DB9CB;color:#1B2733;display:grid;place-items:center;font-size:13px">云</span>云栖露营地运营中心
+      </div>
+      <h1 style="margin-top:38px">营位、物资、<br>交接与结算，一处管完</h1>
+      <p>从游客查询营位到退营验收结算，营地日常运营的八个环节都在同一条业务链上。物资库存与营位可用性同步校验，避免「营位能订、装备不够」。</p>
+      <div class="badge-row"><span class="pill">营位日历</span><span class="pill">物资预占</span><span class="pill">交接留痕</span><span class="pill">线下结算</span></div>
+      <div class="route">
+        <div><b>1</b>查询营位 → 提交预约</div>
+        <div><b>2</b>运营确认 → 物资备货</div>
+        <div><b>3</b>到店入住 → 巡查服务</div>
+        <div><b>4</b>退营验收 → 线下结算</div>
+      </div>
+    </div>
+    <div style="font-size:12px;color:#8FA9B8;position:relative;z-index:2">© 2026 云栖露营地 · 仅登记线下收款结果，不接入在线支付</div>
+    <div class="pitch-art">
+      <span style="left:8%;bottom:26px;width:54px;height:34px"></span>
+      <span style="left:19%;bottom:52px;width:54px;height:34px"></span>
+      <span style="left:30%;bottom:22px;width:54px;height:34px"></span>
+      <span style="left:41%;bottom:60px;width:54px;height:34px"></span>
+      <span style="left:52%;bottom:30px;width:54px;height:34px"></span>
+      <span style="left:63%;bottom:56px;width:54px;height:34px"></span>
+      <span style="left:74%;bottom:24px;width:54px;height:34px"></span>
+      <span style="left:85%;bottom:48px;width:54px;height:34px"></span>
+    </div>
+  </div>
+  <div class="form"><div class="box">
+    <h2>账号登录</h2>
+    <div class="s">使用营地内部账号，或游客手机号快速查询预约</div>
+    <div class="field"><label>账号 / 手机号</label><input value="admin" placeholder="请输入账号"></div>
+    <div class="field"><label>密码</label><input type="password" value="********" placeholder="请输入密码"></div>
+    <div class="field" style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--text-sub)">
+      <label style="display:flex;align-items:center;gap:6px;margin:0"><input type="checkbox" checked style="height:14px;width:14px">记住账号</label>
+      <a href="#">忘记密码</a>
+    </div>
+    <button class="btn primary">登 录</button>
+    <div class="hint" style="margin-top:14px;line-height:20px">连续 5 次密码错误将锁定 15 分钟。首次登录请及时修改初始密码。</div>
+  </div></div>
+</div></body></html>

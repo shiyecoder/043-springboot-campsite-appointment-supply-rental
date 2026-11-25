@@ -1,0 +1,145 @@
+/* 全局样式：企业海军蓝 + 湖蓝，露营主题的克制商务感（design/design-system.md 的落地版） */
+:root {
+  --primary: #1f2937;
+  --secondary: #2f6b8a;
+  --accent: #3b627a;
+  --green: #2e7d5b;
+  --amber: #b07b2b;
+  --red: #b3443c;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --line: #e4e9ef;
+  --text: #1f2937;
+  --text-2: #5a6b7b;
+  --text-3: #8b9aa8;
+  --radius: 8px;
+  --shadow-card: 0 1px 2px rgba(31, 41, 55, .06), 0 6px 18px rgba(31, 41, 55, .05);
+  --font: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+body {
+  font-family: var(--font); background: var(--bg); color: var(--text);
+  font-size: 14px; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--secondary); text-decoration: none; }
+
+/* ---------- 页面通用骨架 ---------- */
+.page { padding: 16px 18px 20px; }
+.page-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 14px; min-height: 34px;
+}
+.page-head h2 {
+  font-size: 17px; font-weight: 600; margin: 0; letter-spacing: .2px;
+  display: flex; align-items: center; gap: 8px;
+}
+.page-head .sub { font-size: 12px; color: var(--text-3); font-weight: 400; }
+.page-head .ops { display: flex; gap: 8px; align-items: center; }
+
+.card {
+  background: var(--card); border-radius: var(--radius); border: 1px solid var(--line);
+  box-shadow: var(--shadow-card); padding: 14px 16px;
+}
+
+/* 筛选条：下拉宽度 180-240px，不夸张也不局促 */
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px; margin-bottom: 12px; box-shadow: var(--shadow-card);
+}
+.filter-bar .el-input { width: 210px; }
+.filter-bar .el-select { width: 200px; }
+.filter-bar .el-date-editor { width: 250px; }
+.filter-bar .grow { flex: 1; }
+
+/* 表格卡片：表头不固定宽度，按内容自适应 */
+.table-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-card); padding: 4px 4px 10px; overflow: hidden;
+}
+.table-card .el-table th.el-table__cell {
+  background: #f7f9fb; color: var(--text-2); font-weight: 600; font-size: 13px;
+  white-space: nowrap; padding: 9px 0;
+}
+.table-card .el-table td.el-table__cell { padding: 7px 0; font-size: 13px; }
+.table-card .el-table .cell { padding: 0 10px; }
+.pager { display: flex; justify-content: flex-end; padding: 12px 14px 2px; }
+
+/* 列表缩略图：统一 4:3，不撑破行高 */
+.thumb {
+  width: 72px; height: 54px; object-fit: cover; border-radius: 5px;
+  border: 1px solid var(--line); background: #eef2f6; display: block;
+}
+.thumb-lg { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); display: block; }
+.thumb-sm { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+
+.muted { color: var(--text-3); font-size: 12px; }
+.mono { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; }
+.strong { font-weight: 600; }
+.money { font-weight: 600; color: var(--primary); font-variant-numeric: tabular-nums; }
+.danger-text { color: var(--red); }
+.ok-text { color: var(--green); }
+.flex { display: flex; }
+.gap8 { gap: 8px; }
+.aic { align-items: center; }
+.col { display: flex; flex-direction: column; }
+
+/* 统计卡 */
+.stat-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 12px; }
+.stat {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 11px 12px; box-shadow: var(--shadow-card); position: relative; overflow: hidden;
+}
+.stat .k { font-size: 12px; color: var(--text-3); display: flex; align-items: center; gap: 5px; }
+.stat .v { font-size: 22px; font-weight: 600; margin-top: 3px; font-variant-numeric: tabular-nums; letter-spacing: -.3px; }
+.stat .u { font-size: 12px; color: var(--text-3); font-weight: 400; margin-left: 3px; }
+.stat::after { content: ''; position: absolute; left: 0; top: 0; width: 3px; height: 100%; background: var(--secondary); opacity: .7; }
+
+/* 图表卡：一屏内排布，body 高度必须显式，否则 echarts 不渲染 */
+.chart-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-card); padding: 10px 12px; display: flex; flex-direction: column; overflow: hidden;
+}
+.chart-card h4 {
+  margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--text-2);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.chart-card h4 span { font-weight: 400; color: var(--text-3); font-size: 11px; }
+
+/* 详情两栏 */
+.detail-grid { display: grid; grid-template-columns: 1fr 330px; gap: 14px; }
+.kv { display: grid; grid-template-columns: 96px 1fr; gap: 9px 10px; font-size: 13px; margin: 0; }
+.kv dt { color: var(--text-3); }
+.kv dd { margin: 0; color: var(--text); }
+
+.bar { height: 6px; border-radius: 3px; background: #eef2f6; overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 3px; background: var(--secondary); }
+
+/* 时间轴（预约状态流转留痕） */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 1px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 14px 12px; font-size: 13px; }
+.timeline li::before {
+  content: ''; position: absolute; left: -18px; top: 4px; width: 8px; height: 8px;
+  border-radius: 50%; background: var(--secondary); box-shadow: 0 0 0 3px #eaf1f5;
+}
+.timeline .t { color: var(--text-3); font-size: 12px; }
+
+/* 移动端：<768px 表格转信息卡，禁止横向滚动 */
+@media (max-width: 768px) {
+  .page { padding: 12px; }
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .detail-grid { grid-template-columns: 1fr; }
+  .filter-bar .el-input, .filter-bar .el-select, .filter-bar .el-date-editor { width: 100%; }
+}
+
+/* Element Plus 主题微调 */
+.el-button--primary {
+  --el-button-bg-color: var(--secondary); --el-button-border-color: var(--secondary);
+  --el-button-hover-bg-color: #3a7b9c; --el-button-hover-border-color: #3a7b9c;
+}
+.el-tabs__item.is-active { color: var(--secondary); }
+.el-tabs__active-bar { background-color: var(--secondary); }
+.el-dialog__title { font-size: 15px; font-weight: 600; }
+.el-table .el-table__row:hover > td.el-table__cell { background: #f6f9fb; }

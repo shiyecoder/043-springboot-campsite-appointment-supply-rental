@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新建预约 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#24455C">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">预约业务</div>
+<a class="on" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">客户</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<a class="" href="17_event.html">事件登记</a>
+<div class="group">配置</div>
+<a class="" href="21_message.html">消息中心<span class="badge">2</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>预约业务</b> / 预约管理 / <b>新建预约</b></div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">前台人员</div>
+  </header>
+  <main class="content"><h1>新建预约</h1>
+<div class="sub">预订人：陈晓雯 · 手机 138****6721 · 系统将校验日期重叠、容量与停用时段</div>
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <h2>营位与日期</h2>
+      <div class="row" style="gap:24px">
+        <div style="flex:1">
+          <label class="f"><span>营位</span><select style="width:100%"><option>A-07 草坪帐篷位（标准 2 / 最大 4 人）</option></select></label>
+          <label class="f"><span>入住日期</span><input type="date" value="2026-11-07" style="width:100%"></label>
+          <label class="f"><span>退营日期</span><input type="date" value="2026-11-09" style="width:100%"></label>
+          <label class="f"><span>入住人数</span><input value="3" style="width:100%"></label>
+        </div>
+        <div style="flex:1">
+          <label class="f"><span>预订人</span><input value="陈晓雯" style="width:100%"></label>
+          <label class="f"><span>联系电话</span><input value="138 0013 6721" style="width:100%"></label>
+          <label class="f"><span>车辆数</span><input value="1" style="width:100%"></label>
+          <label class="f"><span>儿童/特殊人群</span><select style="width:100%"><option>有儿童（需确认安全提示）</option><option>无</option></select></label>
+        </div>
+      </div>
+      <div class="note">该营位在 11-07 至 11-09 期间无冲突预约，容量 3 人未超过最大容量 4 人。含 1 名 6 岁儿童，需勾选「儿童安全提示已确认」。</div>
+      <label style="display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px"><input type="checkbox" checked style="width:14px;height:14px">已向客人确认儿童安全提示（远离溪流、夜间陪同）</label>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>租赁物资需求</h2>
+      <div class="toolbar">
+        <select><option>物资分类：全部</option></select>
+        <button class="btn sm">+ 添加物资</button><button class="btn sm">按人数推荐组合</button>
+        <div style="flex:1"></div><span class="hint">物资可用性按 11-07 至 11-09 校验</span>
+      </div>
+      <table><thead><tr><th>物资</th><th>规格</th><th>单价</th><th>需求数量</th><th>可用数量</th><th>小计</th><th>操作</th></tr></thead><tbody><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-1.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">四人帐篷</div></td><td>双门 / 铝杆</td><td>￥60/晚</td><td>1</td><td><span class="tag t-green">可用 6</span></td><td>￥120</td><td><a class="btn sm">删除</a></td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-3.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">折叠桌椅组</div></td><td>1 桌 4 椅</td><td>￥40/晚</td><td>1</td><td><span class="tag t-green">可用 12</span></td><td>￥80</td><td><a class="btn sm">删除</a></td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-5.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">卡式炉具</div></td><td>单头 / 含气罐</td><td>￥25/晚</td><td>1</td><td><span class="tag t-amber">可用 2</span></td><td>￥50</td><td><a class="btn sm">删除</a></td></tr></tbody></table>
+      <div class="note" style="margin-top:10px">四人帐篷当前可用 6 顶（含周转缓冲已扣除），本次预占 1 顶；卡式炉具可用 9 台，预占 1 台。全部满足。</div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>同行人与车辆</h2>
+      <div class="row" style="gap:20px">
+        <div style="flex:1">
+          <div class="hint" style="margin-bottom:8px">同行人（不含预订人）</div>
+          <table><thead><tr><th>姓名</th><th>联系方式</th><th>年龄段</th><th>紧急联系人</th><th>操作</th></tr></thead><tbody><tr><td>陈小雨</td><td>138****6721</td><td>儿童（6 岁）</td><td>陈晓雯 138****6721</td><td><a class="btn sm">编辑</a></td></tr><tr><td>王琳</td><td>139****2280</td><td>成人</td><td>王琳 139****2280</td><td><a class="btn sm">编辑</a></td></tr></tbody></table>
+          <button class="btn sm">+ 添加同行人</button>
+        </div>
+        <div style="flex:1">
+          <div class="hint" style="margin-bottom:8px">车辆登记</div>
+          <table><thead><tr><th>车牌</th><th>车型</th><th>预计到达</th><th>操作</th></tr></thead><tbody><tr><td>浙A·8F72K</td><td>SUV</td><td>11-07 15:30</td><td><a class="btn sm">编辑</a></td></tr><tr><td>浙A·2K19M</td><td>轿车</td><td>11-07 16:10</td><td><a class="btn sm">编辑</a></td></tr></tbody></table>
+          <button class="btn sm">+ 添加车辆</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width:340px;flex:0 0 340px">
+    <div class="card"><h2>费用预估</h2>
+      <div style="font-size:13px;line-height:26px">
+        <div style="display:flex;justify-content:space-between"><span class="hint">营位费（2 晚，周末价）</span><span>￥672</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">清洁费</span><span>￥30</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">物资租金</span><span>￥150</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">押金（可退）</span><span>￥300</span></div>
+        <div style="border-top:1px solid var(--line);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between">
+          <span class="hint">合计</span><b style="color:var(--primary);font-size:17px">￥852</b></div>
+      </div>
+      <div class="hint" style="margin-top:8px">押金在退营验收后按损坏情况退还，不计入收入。</div>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>联合可用性预检</h2>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <span class="tag t-green" style="font-size:13px;padding:3px 10px">推荐</span>
+        <b style="font-size:20px;color:var(--primary)">86.5</b><span class="hint">/ 100</span>
+      </div>
+      <div class="score-row"><span>营位时段</span><div class="bar"><i style="width:100%"></i></div><span class="v">95</span></div>
+      <div class="score-row"><span>容纳人数</span><div class="bar"><i style="width:88%"></i></div><span class="v">88</span></div>
+      <div class="score-row"><span>设施需求</span><div class="bar"><i style="width:80%"></i></div><span class="v">80</span></div>
+      <div class="score-row"><span>物资库存</span><div class="bar"><i style="width:92%"></i></div><span class="v">92</span></div>
+      <div class="score-row"><span>物资周转</span><div class="bar"><i style="width:70%"></i></div><span class="v">70</span></div>
+      <div class="score-row"><span>维护状态</span><div class="bar"><i style="width:100%"></i></div><span class="v">100</span></div>
+      <div class="hint" style="margin-top:6px">规则版本 v3 · 计算时间 2026-11-01 14:05:22</div>
+      <a class="btn sm" href="15_combo.html" style="margin-top:10px;display:inline-block">查看完整计算依据</a>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:14px">
+      <button class="btn" style="flex:1">保存草稿</button><button class="btn primary" style="flex:2">提交预约</button>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>

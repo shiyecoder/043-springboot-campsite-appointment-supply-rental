@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>评价与黑名单 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1F2937">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">营地资源</div>
+<a class="" href="06_site_admin.html">营区与营位</a>
+<a class="" href="07_price.html">价格与停用</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">物资租赁</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="" href="15_combo.html">营位物资联合可用性</a>
+<div class="group">安全运营</div>
+<a class="" href="16_patrol.html">巡检任务</a>
+<a class="" href="17_event.html">隐患与事件<span class="badge">1</span></a>
+<div class="group">客户服务</div>
+<a class="on" href="18_review.html">评价与黑名单</a>
+<div class="group">配置</div>
+<a class="" href="19_rule.html">规则配置</a>
+<a class="" href="20_system.html">用户与角色</a>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>客户服务</b> / 评价与黑名单</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">顾</div>
+    <div style="font-size:13px">运营经理</div>
+  </header>
+  <main class="content"><h1>评价与黑名单</h1>
+<div class="sub">退营完成后可对环境、卫生、设施与服务评分；严重违规客户加入受限名单需经理审批</div>
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <h2>客户评价</h2>
+      <div class="toolbar"><select><option>评分：全部</option></select><select><option>营区：全部</option></select>
+        <input class="search" placeholder="预约编号 / 客人"><button class="btn primary">查询</button></div>
+      <table><thead><tr><th>预约编号</th><th>客人</th><th>营位</th><th>环境</th><th>卫生</th><th>设施</th><th>服务</th><th>内容</th><th>时间</th></tr></thead><tbody><tr><td>YY20261029-0021</td><td>邵敏</td><td>A-05</td><td>5.0</td><td>4.5</td><td>4.5</td><td>5.0</td><td>营位很安静，前台响应快</td><td>2026-10-31 10:12</td></tr><tr><td>YY20261027-0014</td><td>钱宇</td><td>B-02</td><td>4.5</td><td>4.0</td><td>4.0</td><td>4.5</td><td>木平台很稳，洗手间稍远</td><td>2026-10-29 09:30</td></tr><tr><td>YY20261026-0011</td><td>孙萌</td><td>C-03</td><td>5.0</td><td>5.0</td><td>4.5</td><td>5.0</td><td>房车位水电方便，孩子玩沙池很开心</td><td>2026-10-28 11:05</td></tr><tr><td>YY20261024-0008</td><td>李彤</td><td>D-02</td><td>4.0</td><td>3.5</td><td>4.0</td><td>4.5</td><td>林间位蚊虫较多，建议提供驱蚊</td><td>2026-10-26 16:40</td></tr></tbody></table><div class="pager"><span>共 31 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>受限客户名单</h2>
+      <table><thead><tr><th>客户</th><th>原因</th><th>登记时间</th><th>状态</th><th>审批人</th><th>操作</th></tr></thead><tbody><tr><td>邓伟 137****9014</td><td>累计爽约 3 次</td><td>2026-10-31 09:12</td><td><span class="tag t-amber">待审批</span></td><td>—</td><td><a class="btn sm">审批</a></td></tr><tr><td>郑凯 135****7720</td><td>恶意损坏帐篷</td><td>2026-09-18 14:20</td><td><span class="tag t-red">已生效</span></td><td>顾青</td><td><a class="btn sm">解除</a></td></tr><tr><td>吴倩 139****3388</td><td>多次违规明火</td><td>2026-08-02 10:05</td><td><span class="tag t-green">已解除</span></td><td>顾青</td><td><a class="btn sm">查看</a></td></tr></tbody></table>
+    </div>
+  </div>
+  <div style="width:340px;flex:0 0 340px">
+    <div class="card"><h2>评分分布</h2>
+      <div class="bars" style="height:110px"><i style="height:100%;background:#2E7D5B"></i><i style="height:38%;background:#2F6B8A"></i><i style="height:9%;background:#9DB9CB"></i></div>
+      <div class="legend"><span><i style="background:#2E7D5B"></i>5 星</span><span><i style="background:#2F6B8A"></i>4 星</span>
+        <span><i style="background:#9DB9CB"></i>3 星及以下</span></div>
+      <div style="margin-top:12px;font-size:13px;line-height:24px">
+        <div style="display:flex;justify-content:space-between"><span class="hint">综合评分</span><b>4.62</b></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">环境</span><span>4.78</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">卫生</span><span>4.51</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">设施</span><span>4.44</span></div>
+        <div style="display:flex;justify-content:space-between"><span class="hint">服务</span><span>4.75</span></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>新增受限记录</h2>
+      <label class="f" style="align-items:flex-start"><span>客户</span><input value="邓伟 137****9014" style="width:200px"></label>
+      <label class="f" style="align-items:flex-start"><span>原因</span>
+        <select style="width:200px"><option>恶意损坏物资</option><option>多次爽约</option><option>严重违规</option></select></label>
+      <label class="f" style="align-items:flex-start"><span>说明</span><textarea rows="3" style="width:200px">10-30 预约取消后未到店，累计爽约 3 次</textarea></label>
+      <div class="note">提交后进入经理审批，审批通过才生效；解除同样需要填写原因。</div>
+      <button class="btn primary" style="width:100%;margin-top:10px">提交审批</button>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>预约日历 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#24455C">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">今日值班</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="on" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">客户</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<a class="" href="17_event.html">事件登记</a>
+<div class="group">配置</div>
+<a class="" href="21_message.html">消息中心<span class="badge">2</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>预约业务</b> / 预约日历</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">林</div>
+    <div style="font-size:13px">前台人员</div>
+  </header>
+  <main class="content"><h1>预约日历</h1>
+<div class="sub">2026 年 11 月 · 按营位与日期查看占用，虚线为维护与包场占用</div>
+<div class="card">
+  <div class="toolbar">
+    <button class="btn sm">‹ 上月</button><b style="font-size:14px;margin:0 6px">2026 年 11 月</b><button class="btn sm">下月 ›</button>
+    <select><option>视图：月度日历</option><option>视图：营位甘特</option></select>
+    <select><option>营区：全部</option></select>
+    <div style="flex:1"></div>
+    <button class="btn primary">+ 新建预约</button>
+  </div>
+  <div class="cal"><div class="hd">一</div><div class="hd">二</div><div class="hd">三</div><div class="hd">四</div><div class="hd">五</div><div class="hd">六</div><div class="hd">日</div><div class="cd"><b>1</b><div class="ev ok">A-01 入住</div></div><div class="cd"><b>2</b><div class="ev ">B-06 退营</div></div><div class="cd"><b>3</b><div class="ev ok">C-02 入住</div></div><div class="cd"><b>4</b></div><div class="cd"><b>5</b><div class="ev ok">A-07 入住</div></div><div class="cd"><b>6</b><div class="ev ">D-01 退营</div></div><div class="cd"><b>7</b><div class="ev ok">A-03 入住</div><div class="ev warn">维护 B-03</div></div><div class="cd"><b>8</b><div class="ev ok">C-04 入住</div></div><div class="cd"><b>9</b></div><div class="cd"><b>10</b><div class="ev ok">B-01 入住</div></div><div class="cd"><b>11</b><div class="ev ">A-05 退营</div></div><div class="cd"><b>12</b></div><div class="cd"><b>13</b></div><div class="cd"><b>14</b><div class="ev warn">包场 C 区</div></div><div class="cd"><b>15</b><div class="ev ok">A-02 入住</div></div><div class="cd"><b>16</b></div><div class="cd"><b>17</b></div><div class="cd"><b>18</b></div><div class="cd"><b>19</b></div><div class="cd"><b>20</b><div class="ev ok">B-05 入住</div></div><div class="cd"><b>21</b><div class="ev warn">会议占用</div></div><div class="cd"><b>22</b></div><div class="cd"><b>23</b></div><div class="cd"><b>24</b></div><div class="cd"><b>25</b><div class="ev ok">A-08 入住</div></div><div class="cd"><b>26</b></div><div class="cd"><b>27</b></div><div class="cd"><b>28</b><div class="ev warn">C-06 停用</div></div><div class="cd"><b>29</b></div><div class="cd"><b>30</b></div><div class="cd" style="background:#FAFBFC"></div><div class="cd" style="background:#FAFBFC"></div></div>
+  <div class="legend" style="margin-top:10px"><span><i style="background:#2E7D5B"></i>入住</span>
+    <span><i style="background:#E9EFF3"></i>退营</span><span><i style="background:#B3261E"></i>维护 / 包场</span></div>
+</div>
+<div class="row" style="margin-top:16px">
+  <div class="card" style="flex:1"><h2>今日到店与离店</h2>
+    <table><thead><tr><th>类型</th><th>预约编号</th><th>营位</th><th>客人</th><th>人数</th><th>时间</th><th>状态</th></tr></thead><tbody><tr><td>到店</td><td>YY20261101-0039</td><td>B-06</td><td>周立</td><td>4</td><td>14:20</td><td><span class="tag t-blue">已入住</span></td></tr><tr><td>到店</td><td>YY20261101-0042</td><td>A-07</td><td>陈晓雯</td><td>3</td><td>15:30</td><td><span class="tag t-amber">待确认</span></td></tr><tr><td>离店</td><td>YY20261030-0028</td><td>D-01</td><td>冯雪</td><td>2</td><td>11:10</td><td><span class="tag t-blue">待验收</span></td></tr><tr><td>到店</td><td>YY20261031-0036</td><td>C-02</td><td>许安然</td><td>2</td><td>16:00</td><td><span class="tag t-green">已确认</span></td></tr></tbody></table>
+  </div>
+  <div class="card" style="width:360px"><h2>未来 7 天可订余量</h2>
+    <table><thead><tr><th>日期</th><th>可订</th><th>已订</th><th>利用率</th></tr></thead><tbody><tr><td>11-02 周一</td><td>48</td><td>20</td><td>29.4%</td></tr><tr><td>11-03 周二</td><td>52</td><td>16</td><td>23.5%</td></tr><tr><td>11-04 周三</td><td>50</td><td>18</td><td>26.4%</td></tr><tr><td>11-05 周四</td><td>44</td><td>24</td><td>35.2%</td></tr><tr><td>11-06 周五</td><td>26</td><td>42</td><td>61.7%</td></tr><tr><td>11-07 周六</td><td>14</td><td>54</td><td>79.4%</td></tr><tr><td>11-08 周日</td><td>18</td><td>50</td><td>73.5%</td></tr></tbody></table>
+  </div>
+</div></main>
+</div></div></body></html>

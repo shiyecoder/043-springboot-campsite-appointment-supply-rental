@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>营区与营位 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1F2937">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">营地资源</div>
+<a class="on" href="06_site_admin.html">营区与营位</a>
+<a class="" href="07_price.html">价格与停用</a>
+<div class="group">预约业务</div>
+<a class="" href="09_booking_list.html">预约管理<span class="badge">6</span></a>
+<a class="" href="10_booking_calendar.html">预约日历</a>
+<a class="" href="11_arrival.html">入住核验<span class="badge">3</span></a>
+<a class="" href="12_checkout.html">退营结算<span class="badge">2</span></a>
+<div class="group">物资租赁</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="" href="15_combo.html">营位物资联合可用性</a>
+<div class="group">安全运营</div>
+<a class="" href="16_patrol.html">巡检任务</a>
+<a class="" href="17_event.html">隐患与事件<span class="badge">1</span></a>
+<div class="group">客户服务</div>
+<a class="" href="18_review.html">评价与黑名单</a>
+<div class="group">配置</div>
+<a class="" href="19_rule.html">规则配置</a>
+<a class="" href="20_system.html">用户与角色</a>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>营地资源</b> / 营区与营位</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">顾</div>
+    <div style="font-size:13px">运营经理</div>
+  </header>
+  <main class="content"><h1>营区与营位管理</h1>
+<div class="sub">维护营区、营位编号、类型、容量、基础价格与状态；营位图片通过上传组件提交</div>
+<div class="card">
+  <div class="toolbar">
+    <input class="search" placeholder="营位编号 / 名称">
+    <select><option>所属区域：全部</option></select>
+    <select><option>营位类型：全部</option></select>
+    <select><option>营位状态：全部</option></select>
+    <button class="btn primary">查询</button><button class="btn">重置</button>
+    <div style="flex:1"></div>
+    <button class="btn">导出</button><button class="btn ghost">批量停用</button><button class="btn primary">+ 新增营位</button>
+  </div>
+  <table><thead><tr><th>营位编号</th><th>营位类型</th><th>所属区域</th><th>标准/最大容量</th><th>面积</th><th>基础价格</th><th>配套设施</th><th>状态</th><th>更新时间</th><th>操作</th></tr></thead><tbody><tr><td>A-01</td><td>草坪帐篷位</td><td>A 区</td><td>2 / 4</td><td>60 ㎡</td><td>￥280</td><td>220V、野餐桌</td><td><span class="tag t-green">可预订</span></td><td>2026-10-31 18:20</td></tr><tr><td>A-07</td><td>草坪帐篷位</td><td>A 区</td><td>2 / 4</td><td>60 ㎡</td><td>￥280</td><td>220V、野餐桌</td><td><span class="tag t-blue">已入住</span></td><td>2026-11-01 09:12</td></tr><tr><td>B-03</td><td>木平台位</td><td>B 区</td><td>4 / 6</td><td>90 ㎡</td><td>￥460</td><td>平台、遮阳棚</td><td><span class="tag t-red">维修中</span></td><td>2026-10-28 15:40</td></tr><tr><td>B-06</td><td>木平台位</td><td>B 区</td><td>4 / 6</td><td>90 ㎡</td><td>￥460</td><td>平台、遮阳棚</td><td><span class="tag t-blue">已入住</span></td><td>2026-11-01 10:05</td></tr><tr><td>C-02</td><td>房车位</td><td>C 区</td><td>3 / 5</td><td>110 ㎡</td><td>￥520</td><td>独立水电桩</td><td><span class="tag t-amber">已预留</span></td><td>2026-10-30 11:30</td></tr><tr><td>C-06</td><td>房车位</td><td>C 区</td><td>3 / 5</td><td>110 ㎡</td><td>￥520</td><td>独立水电桩</td><td><span class="tag t-gray">停用</span></td><td>2026-10-26 08:15</td></tr><tr><td>D-01</td><td>林间位</td><td>D 区</td><td>2 / 3</td><td>45 ㎡</td><td>￥220</td><td>林荫、吊床架</td><td><span class="tag t-amber">待清洁</span></td><td>2026-11-01 11:48</td></tr><tr><td>D-04</td><td>林间位</td><td>D 区</td><td>2 / 3</td><td>45 ㎡</td><td>￥220</td><td>林荫、吊床架</td><td><span class="tag t-green">可预订</span></td><td>2026-10-29 16:22</td></tr></tbody></table>
+  <div class="pager"><span>共 68 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+</div>
+<div class="row" style="margin-top:16px">
+  <div class="card" style="flex:1"><h2>营区概况</h2><div class="kv "><div><span>营区数量</span>4 个（A/B/C/D）</div><div><span>营位总数</span>68 个</div><div><span>可预订</span>41 个</div><div><span>维修停用</span>3 个</div><div><span>可用电营位</span>52 个</div><div><span>本周新增</span>2 个</div></div></div>
+  <div class="card" style="flex:1"><h2>状态说明</h2>
+    <div class="hint" style="line-height:24px">可预订 → 游客可提交预约；已预留 → 已有确认预约但未到店；已入住 → 客人已办理入住；
+    待清洁 → 退营后待保洁；维修中 → 设施维修暂停销售；停用 → 长期停售（需填写原因）。<br>
+    状态变更由前台或运营经理操作，全部写入操作日志。</div>
+  </div>
+</div></main>
+</div></div></body></html>

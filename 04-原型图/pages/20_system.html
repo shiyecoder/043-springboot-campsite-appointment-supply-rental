@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>用户与角色 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#1B2430">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">经营看板</a>
+<div class="group">系统</div>
+<a class="on" href="20_system.html">用户与角色</a>
+<a class="" href="19_rule.html">规则配置</a>
+<div class="group">配置</div>
+<a class="" href="21_message.html">消息中心<span class="badge">3</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>系统</b> / 用户与角色</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">系</div>
+    <div style="font-size:13px">系统管理员</div>
+  </header>
+  <main class="content"><h1>用户与角色</h1>
+<div class="sub">账号、角色与菜单权限；菜单按角色动态下发，数据范围独立控制</div>
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <div class="toolbar">
+        <input class="search" placeholder="账号 / 姓名">
+        <select><option>角色：全部</option></select>
+        <button class="btn primary">查询</button>
+        <div style="flex:1"></div><button class="btn primary">+ 新增用户</button>
+      </div>
+      <table><thead><tr><th>ID</th><th>账号</th><th>角色</th><th>部门</th><th>数据范围</th><th>状态</th><th>最近登录</th><th>操作</th></tr></thead><tbody><tr><td>1</td><td>admin</td><td>系统管理员</td><td>总部</td><td>全部数据</td><td><span class="tag t-green">正常</span></td><td>2026-11-01 09:12</td><td><a class="btn sm">编辑</a></td></tr><tr><td>2</td><td>gujing</td><td>运营经理</td><td>运营部</td><td>全部营区</td><td><span class="tag t-green">正常</span></td><td>2026-11-01 13:40</td><td><a class="btn sm">编辑</a></td></tr><tr><td>3</td><td>linyue</td><td>前台人员</td><td>前台</td><td>预约与入住</td><td><span class="tag t-green">正常</span></td><td>2026-11-01 14:05</td><td><a class="btn sm">编辑</a></td></tr><tr><td>4</td><td>tanglei</td><td>仓库人员</td><td>仓储</td><td>物资与备货</td><td><span class="tag t-green">正常</span></td><td>2026-11-01 08:50</td><td><a class="btn sm">编辑</a></td></tr><tr><td>5</td><td>zhouwei</td><td>前台人员</td><td>前台</td><td>预约与入住</td><td><span class="tag t-red">锁定</span></td><td>2026-10-31 21:10</td><td><a class="btn sm">编辑</a></td></tr><tr><td>6</td><td>chenke</td><td>游客</td><td>外部</td><td>本人数据</td><td><span class="tag t-green">正常</span></td><td>2026-10-30 16:20</td><td><a class="btn sm">编辑</a></td></tr></tbody></table><div class="pager"><span>共 18 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <h2>角色列表</h2>
+      <table><thead><tr><th>角色</th><th>编码</th><th>人数</th><th>菜单数</th><th>说明</th></tr></thead><tbody><tr><td>系统管理员</td><td>admin</td><td>1</td><td>全部（隐藏菜单管理项）</td><td>账号与系统配置</td></tr><tr><td>运营经理</td><td>manager</td><td>2</td><td>16</td><td>营地资源、规则、审批与统计</td></tr><tr><td>前台人员</td><td>reception</td><td>3</td><td>7</td><td>预约、入住、结算</td></tr><tr><td>仓库人员</td><td>warehouse</td><td>2</td><td>4</td><td>物资、备货、发放归还</td></tr><tr><td>游客</td><td>guest</td><td>1</td><td>门户页</td><td>查询与本人预约</td></tr></tbody></table>
+    </div>
+  </div>
+  <div style="width:360px;flex:0 0 360px">
+    <div class="card"><h2>为「前台人员」分配菜单</h2>
+      <div class="hint" style="margin-bottom:10px">勾选后该角色登录可见对应菜单；菜单权限不等于接口权限</div>
+      <div style="font-size:13px;line-height:26px">
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">工作台 · 今日值班</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">预约业务 · 预约管理</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">预约业务 · 预约日历</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">预约业务 · 入住核验</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">预约业务 · 退营结算</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked style="width:14px;height:14px">客户 · 评价与黑名单</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="width:14px;height:14px">物资租赁 · 物资档案</label>
+        <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" style="width:14px;height:14px">配置 · 规则配置</label>
+      </div>
+      <button class="btn primary" style="width:100%;margin-top:12px">保存分配</button>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>数据范围</h2>
+      <div class="hint" style="line-height:22px">游客仅本人预约；前台查看当日全营区；仓库仅物资相关；运营经理全部营区；管理员按授权组织范围。</div>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>

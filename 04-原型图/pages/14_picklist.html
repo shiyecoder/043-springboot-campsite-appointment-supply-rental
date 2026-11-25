@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>备货与发放 · 云栖露营地</title>
+<link rel="stylesheet" href="../mock.css">
+<style></style></head>
+<body><div class="shell">
+<aside class="side" style="background:#2A504A">
+  <div class="brand"><span class="mark">云</span>云栖露营运营</div>
+  <nav class="nav">
+<div class="group">工作台</div>
+<a class="" href="02_dashboard.html">仓储看板</a>
+<div class="group">物资</div>
+<a class="" href="13_goods.html">物资档案</a>
+<a class="on" href="14_picklist.html">备货与发放<span class="badge">4</span></a>
+<a class="" href="15_combo.html">物资可用性校验</a>
+<div class="group">配置</div>
+<a class="" href="21_message.html">消息中心<span class="badge">2</span></a>
+<a class="" href="22_profile.html">个人中心</a>
+</nav>
+</aside>
+<div class="main">
+  <header class="top">
+    <div class="crumb"><b>物资租赁</b> / 备货与发放</div><div class="spacer"></div>
+    <button class="icon-btn" title="全局搜索"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-search"></use></svg></button>
+    <button class="icon-btn" title="消息"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-bell"></use></svg></button>
+    <button class="icon-btn" title="帮助"><svg width="18" height="18" aria-hidden="true"><use href="../icons.svg#i-file"></use></svg></button>
+    <div class="avatar">唐</div>
+    <div style="font-size:13px">仓库人员</div>
+  </header>
+  <main class="content"><h1>备货与发放</h1>
+<div class="sub">按今日入住生成备货清单，记录发放数量、序列号与物品状态；回收后转待检</div>
+<div class="card" style="margin-bottom:14px">
+  <div class="toolbar" style="margin-bottom:0">
+    <input type="date" value="2026-11-01" style="width:160px">
+    <select><option>状态：待备货</option><option>已备货</option><option>已发放</option><option>已归还</option></select>
+    <button class="btn primary">生成备货清单</button>
+    <div style="flex:1"></div>
+    <span class="hint">今日待备货 4 单 · 涉及物资 11 项</span>
+  </div>
+</div>
+
+<div class="row" style="align-items:flex-start">
+  <div style="flex:1;min-width:0">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+        <h2 style="margin:0">备货单 BH20261101-0007</h2>
+        <div><span class="tag t-amber">待备货</span> <span class="hint">预约 YY20261101-0039 · 营位 B-06 · 周立</span></div>
+      </div>
+      <table><thead><tr><th>物资</th><th>需求</th><th>库存可用</th><th>分配序列号</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-1.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">四人帐篷</div></td><td>1</td><td>6</td><td>ZP-2024-0087</td><td><span class="tag t-green">已分配</span></td><td><a class="btn sm">更换</a></td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-3.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">折叠桌椅组</div></td><td>1</td><td>12</td><td>ZH-2023-0152</td><td><span class="tag t-green">已分配</span></td><td><a class="btn sm">更换</a></td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-5.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">卡式炉具</div></td><td>1</td><td>2</td><td>LJ-2025-0033</td><td><span class="tag t-green">已分配</span></td><td><a class="btn sm">更换</a></td></tr><tr><td><div style="display:flex;align-items:center;gap:8px"><img src="../img/goods-6.jpg" style="width:36px;height:28px;object-fit:cover;border-radius:3px">营地灯</div></td><td>2</td><td>9</td><td>DG-2025-0112 / 0113</td><td><span class="tag t-green">已分配</span></td><td><a class="btn sm">更换</a></td></tr></tbody></table>
+      <div class="toolbar" style="margin-top:12px">
+        <label style="display:flex;align-items:center;gap:6px;font-size:13px"><input type="checkbox" checked style="width:14px;height:14px">全部物资已备齐并拍照</label>
+        <div style="flex:1"></div>
+        <button class="btn">打印备货单</button><button class="btn primary">确认出库</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>今日发放记录</h2>
+      <table><thead><tr><th>时间</th><th>备货单</th><th>预约</th><th>营位</th><th>物资件数</th><th>发放人</th><th>状态</th></tr></thead><tbody><tr><td>11-01 09:20</td><td>BH20261101-0005</td><td>YY20261031-0031</td><td>A-03</td><td>5</td><td>唐磊</td><td><span class="tag t-green">已发放</span></td></tr><tr><td>11-01 08:55</td><td>BH20261101-0004</td><td>YY20261031-0033</td><td>C-01</td><td>3</td><td>唐磊</td><td><span class="tag t-green">已发放</span></td></tr><tr><td>11-01 08:30</td><td>BH20261101-0003</td><td>YY20261030-0028</td><td>D-01</td><td>4</td><td>唐磊</td><td><span class="tag t-blue">已归还</span></td></tr><tr><td>10-31 17:10</td><td>BH20261031-0021</td><td>YY20261031-0031</td><td>A-03</td><td>5</td><td>唐磊</td><td><span class="tag t-green">已发放</span></td></tr></tbody></table>
+      <div class="pager"><span>共 24 条</span><select style="width:96px;height:26px"><option>10 条/页</option><option>20 条/页</option><option>50 条/页</option></select><span class="pg">上一页</span><span class="pg on">1</span><span class="pg">2</span><span class="pg">3</span><span class="pg">4</span><span class="pg">5</span><span class="pg">下一页</span></div>
+    </div>
+  </div>
+
+  <div style="width:340px;flex:0 0 340px">
+    <div class="card"><h2>库存预警</h2>
+      <div style="font-size:13px;line-height:22px">
+        <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)">
+          <span>睡袋（单人）</span><span class="tag t-red">已租完</span></div>
+        <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)">
+          <span>卡式炉具</span><span class="tag t-amber">仅剩 2</span></div>
+        <div style="display:flex;justify-content:space-between;padding:6px 0">
+          <span>六人隧道帐</span><span class="tag t-amber">仅剩 3</span></div>
+      </div>
+      <div class="note" style="margin-top:10px">11-07 周末预订已达 54 单，建议提前补充睡袋 10 条、炉具 6 台。</div>
+    </div>
+    <div class="card" style="margin-top:14px"><h2>回收待检</h2>
+      <div class="hint" style="line-height:22px">帐篷 ZP-2024-0087（支杆变形，转维修）<br>桌椅 ZH-2023-0152（完好）<br>营地灯 DG-2025-0112 ×2（完好）</div>
+      <button class="btn" style="width:100%;margin-top:10px">批量入库</button>
+    </div>
+  </div>
+</div></main>
+</div></div></body></html>
